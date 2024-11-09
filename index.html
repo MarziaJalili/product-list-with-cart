@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+
+<body>
+  <main>
+    <div class="main-desserts-container">
+      <h1>Desserts</h1>
+      <ul class="desserts-grid-container">
+      </ul>
+    </div>
+    <section class="cart cart-empty">
+      <h2>Your Cart (<span class="cart-quantity">0</span>)</h2>
+      <img src="./assets/images/illustration-empty-cart.svg" alt="">
+      <span>Your added items will appear here</span>
+    </section>
+
+    <section class="cart cart-filled">
+      <h2>Your Cart (<span class="cart-quantity">0</span>)</h2>
+
+      <ul class="cart-items-grid">
+      </ul>
+
+      <div class="order-total-container">
+        <span>Order Total</span>
+        <span class="order-total-span">$<strong class="order-total">45.50</strong></span>
+      </div>
+
+      <div class="carbon-neutral">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+        <span>This is a <em>carbon-neutral</em> dilevery</span>
+      </div>
+
+      <button class="confirm-button">
+        Confirm Order
+      </button>
+    </section>
+
+    <section class="order-confirmation">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="">
+      <h2>Order Confirmed</h2>
+      <span>We hope you enjoy your food!</span>
+      <div class="ordered-products">
+        <ul class="ordered-products-grid">
+
+          <!-- <li class="cart-item">
+            <div class="ordered-item-details">
+              <img class="ordered-image" src="./assets/images/image-baklava-mobile.jpg" alt="">
+              <div class="cart-item-details">
+                <span class="cart-item-name">Classic Tiramis</span>
+                <div class="cart-item-price-details">
+                  <span class="cart-item-quantity-span">
+                    <span class="cart-item-quantity cart-item-quantity-${matchingProduct.id}">1</span>x
+                  </span>
+                  <span class="one-item-price-span">@ $<span class="one-item-price">5.50</span></span>
+                </div>
+              </div>
+            </div>
+            <span class="total-item-price-span">$<span class="total-item-price">5.50</span></span>
+          </li> -->
+
+        </ul>
+        <div class="order-total-container">
+          <span>Order Total</span>
+          <span class="order-total-span">$<strong class="order-total">45.50</strong></span>
+        </div>
+      </div>
+      <button class="start-new-order-button">
+        Start New Order
+      </button>
+    </section>
+  </main>
+  <script type="module" src="./desserts.js"></script>
+
+</body>
+
+</html>
