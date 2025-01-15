@@ -1,18 +1,5 @@
 import { products } from "./data.js";
-// let cart = JSON.parse(localStorage.getItem("cart"));
 
-// if (!cart) {
-//   cart = [
-//     {
-//       productId: 1,
-//       quantity: 1
-//     },
-//     {
-//       productId: 2,
-//       quantity: 2
-//     }
-//   ]
-// }
 let cart = [];
 let dessertsHTML = '';
 products.forEach(product => {
